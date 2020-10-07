@@ -4,10 +4,7 @@ pub struct Solution {}
 
 impl Solution {
     pub fn sort_colors(nums: &mut Vec<i32>) {
-        if nums.len() < 2 {
-            return
-        }
-
+        // all usize type
         let (mut p0, mut p1, mut p2) = (0, 0, nums.len() - 1);
 
         while p1 <= p2 {
@@ -19,6 +16,9 @@ impl Solution {
                 }
                 2 => {
                     nums.swap(p1, p2);
+                    if p2 == 0 {
+                        return;
+                    }
                     p2 -= 1;
                 }
                 _ => p1 += 1,
