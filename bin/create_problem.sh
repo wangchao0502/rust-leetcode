@@ -17,7 +17,7 @@ pub struct Solution {}
 // answers
 impl Solution {
     pub fn $pname() {
-        //! codes
+        // codes
     }
 }
 
