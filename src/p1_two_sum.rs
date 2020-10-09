@@ -13,8 +13,9 @@ impl Solution {
         let (mut p1, mut p2, len) = (0, 1, nums.len());
 
         while p1 < len - 1 {
+            let x = target - nums[p1];
             while p2 < len {
-                if nums[p1] + nums[p2] == target {
+                if nums[p2] == x {
                     return vec![p1 as i32, p2 as i32];
                 }
                 p2 += 1;
