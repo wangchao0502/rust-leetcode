@@ -21,6 +21,7 @@ impl Solution {
         let mut dp = vec![false; capacity as usize + 1];
         dp[0] = true;
         for i in 0..n {
+            // include capacity, then reverse
             for j in (0..=capacity).rev() {
                 if j - nums[i] >= 0 {
                     let j = j as usize;
