@@ -17,18 +17,18 @@ impl Solution {
         if sum % 2 != 0 {
             return false;
         }
-        let sum = sum / 2;
-        let mut dp = vec![false; sum as usize + 1];
+        let capacity = sum / 2;
+        let mut dp = vec![false; capacity as usize + 1];
         dp[0] = true;
         for i in 0..n {
-            for j in (0..=sum).rev() {
+            for j in (0..=capacity).rev() {
                 if j - nums[i] >= 0 {
                     let j = j as usize;
                     dp[j] = dp[j] || dp[j - nums[i] as usize];
                 }
             }
         }
-        dp[sum as usize]
+        dp[capacity as usize]
     }
 }
 
