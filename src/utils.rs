@@ -264,7 +264,9 @@ mod test {
     use super::*;
     #[test]
     fn test_build_tree() {
-        let t = build_tree(&vec![0, -3, 9, -10, NULL, 5, 7, 8, 9, 10, 11, 12, 13, 14]);
+        let t = build_tree(&vec![
+            0, -3, 9, -10, NULL, 5, 7, 8, 9, NULL, NULL, 12, 13, 14,
+        ]);
         println!("tree={}", t.unwrap().borrow().to_string());
     }
     #[test]

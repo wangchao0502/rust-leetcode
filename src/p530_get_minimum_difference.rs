@@ -2,8 +2,8 @@
 
 // use mods
 use crate::utils::TreeNode;
-use std::rc::Rc;
 use std::cell::RefCell;
+use std::rc::Rc;
 
 pub struct Solution {}
 
@@ -29,26 +29,26 @@ impl Solution {
     }
 }
 
-// #[cfg(test)]
-// mod tests {
-//     use super::*;
-//     use crate::utils::*;
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::utils::*;
 
-//     #[test]
-//     fn p530_get_minimum_difference_t1() {
-//         assert_eq!(
-//             Solution::p530_get_minimum_difference(build_tree(&vec![3, 9, 20, NULL, NULL, 15, 7])),
-//             2
-//         );
-//         assert_eq!(
-//             Solution::p530_get_minimum_difference(build_tree(&vec![2, 1, 3])),
-//             1
-//         );
-//         assert_eq!(
-//             Solution::p530_get_minimum_difference(build_tree(&vec![
-//                 1, 2, 3, 4, NULL, 5, 6, NULL, NULL, NULL, NULL, 7
-//             ])),
-//             1
-//         );
-//     }
-// }
+    #[test]
+    fn p530_get_minimum_difference_t1() {
+        assert_eq!(
+            Solution::p530_get_minimum_difference(build_tree(&vec![9, 7, 15, 3, NULL, NULL, 20])),
+            2
+        );
+        assert_eq!(
+            Solution::p530_get_minimum_difference(build_tree(&vec![2, 1, 3])),
+            1
+        );
+        assert_eq!(
+            Solution::p530_get_minimum_difference(build_tree(&vec![
+                4, 3, 5, 2, NULL, NULL, 6, 1, NULL, NULL, NULL, NULL, NULL, NULL, 7
+            ])),
+            1
+        );
+    }
+}
