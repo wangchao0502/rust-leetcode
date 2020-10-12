@@ -7,6 +7,7 @@ pub struct Solution {}
 // add structs
 
 // answers
+// two pointer exchange
 impl Solution {
     pub fn p344_reverse_string(s: &mut Vec<char>) {
         if s.len() == 0 {
@@ -29,7 +30,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn t1() {
+    fn p344_reverse_string_t1() {
         let mut input = vec!['h', 'e', 'l', 'l', 'o'];
         let output = vec!['o', 'l', 'l', 'e', 'h'];
 
@@ -38,7 +39,7 @@ mod tests {
     }
 
     #[test]
-    fn t2() {
+    fn p344_reverse_string_t2() {
         let mut input = vec!['h', 'o'];
         let output = vec!['o', 'h'];
 

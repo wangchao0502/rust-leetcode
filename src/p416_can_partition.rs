@@ -7,8 +7,8 @@ pub struct Solution {}
 // add structs
 
 // answers
-// This dp problem is hard
-// following code is optimized
+// This dp problem is hard, 0-1 bag problem
+// following code is optimized, 1-d vector
 impl Solution {
     pub fn p416_can_partition(nums: Vec<i32>) -> bool {
         // codes
@@ -38,14 +38,14 @@ mod tests {
     use super::*;
 
     #[test]
-    fn t1() {
+    fn p416_can_partition_t1() {
         let input = vec![1, 5, 11, 5];
         let result = Solution::p416_can_partition(input);
         assert_eq!(result, true);
     }
 
     #[test]
-    fn t2() {
+    fn p416_can_partition_t2() {
         let input = vec![1, 2, 3, 5];
         let result = Solution::p416_can_partition(input);
         assert_eq!(result, false);

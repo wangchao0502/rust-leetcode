@@ -7,6 +7,8 @@ pub struct Solution {}
 // add structs
 
 // answers
+// has map is better answer
+// store nums into hash map, find target - num
 impl Solution {
     pub fn p1_two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         // codes
@@ -33,7 +35,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn t1() {
+    fn p1_two_sum_t1() {
         let input = vec![2, 7, 1, 15];
         let output = vec![0, 1];
         let target = 9;
