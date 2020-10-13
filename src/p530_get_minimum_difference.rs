@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::TreeNode;
+use crate::utils::tree_node::*;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -32,7 +32,7 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::*;
+    use crate::utils::tree_node::build_tree;
 
     #[test]
     fn p530_get_minimum_difference_t1() {
@@ -40,10 +40,18 @@ mod tests {
             Solution::p530_get_minimum_difference(build_tree(&vec![9, 7, 15, 3, NULL, NULL, 20])),
             2
         );
+    }
+
+    #[test]
+    fn p530_get_minimum_difference_t2() {
         assert_eq!(
             Solution::p530_get_minimum_difference(build_tree(&vec![2, 1, 3])),
             1
         );
+    }
+
+    #[test]
+    fn p530_get_minimum_difference_t3() {
         assert_eq!(
             Solution::p530_get_minimum_difference(build_tree(&vec![
                 4, 3, 5, 2, NULL, NULL, 6, 1, NULL, NULL, NULL, NULL, NULL, NULL, 7

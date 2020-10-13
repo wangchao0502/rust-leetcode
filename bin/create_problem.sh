@@ -56,3 +56,4 @@ fn main() {
 EOF
 
 echo "$pname.rs created."
+
