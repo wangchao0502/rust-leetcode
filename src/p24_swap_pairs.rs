@@ -36,5 +36,26 @@ mod tests {
         let output = Solution::p24_swap_pairs(input);
         assert_eq!(output, build_list_node(&vec![2, 1, 4, 3]));
     }
+
+    #[test]
+    fn p24_swap_pairs_t2() {
+        let input = build_list_node(&vec![]);
+        let output = Solution::p24_swap_pairs(input);
+        assert_eq!(output, build_list_node(&vec![]));
+    }
+
+    #[test]
+    fn p24_swap_pairs_t3() {
+        let input = build_list_node(&vec![1]);
+        let output = Solution::p24_swap_pairs(input);
+        assert_eq!(output, build_list_node(&vec![1]));
+    }
+
+    #[test]
+    fn p24_swap_pairs_t4() {
+        let input = build_list_node(&vec![1, 2, 3, 4, 5]);
+        let output = Solution::p24_swap_pairs(input);
+        assert_eq!(output, build_list_node(&vec![2, 1, 4, 3, 5]));
+    }
 }
 
