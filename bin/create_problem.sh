@@ -26,7 +26,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn $pname_t1() {
+    fn ${pname}_t1() {
         // let mut input = 0;
 
         // Solution::$pname(&mut input);
