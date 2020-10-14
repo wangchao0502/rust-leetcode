@@ -1,3 +1,4 @@
+mod p1002_common_chars;
 mod p1_two_sum;
 mod p24_swap_pairs;
 mod p344_reverse_string;
@@ -9,4 +10,3 @@ mod utils;
 fn main() {
     println!("Hello, world!");
 }
-

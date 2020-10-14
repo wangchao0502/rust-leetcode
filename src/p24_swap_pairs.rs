@@ -12,15 +12,13 @@ pub struct Solution {}
 impl Solution {
     pub fn p24_swap_pairs(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         // codes
-        head.and_then(|mut n| {
-            match n.next {
-                Some(mut m) => {
-                    n.next = Self::p24_swap_pairs(m.next);
-                    m.next = Some(n);
-                    Some(m)
-                },
-                None => Some(n)
+        head.and_then(|mut n| match n.next {
+            Some(mut m) => {
+                n.next = Self::p24_swap_pairs(m.next);
+                m.next = Some(n);
+                Some(m)
             }
+            None => Some(n),
         })
     }
 }
@@ -58,4 +56,3 @@ mod tests {
         assert_eq!(output, build_list_node(&vec![2, 1, 4, 3, 5]));
     }
 }
-
