@@ -1,5 +1,6 @@
-mod p1002_common_chars;
 mod p1_two_sum;
+mod p1002_common_chars;
+mod p2_add_two_numbers;
 mod p24_swap_pairs;
 mod p344_reverse_string;
 mod p416_can_partition;
@@ -10,3 +11,4 @@ mod utils;
 fn main() {
     println!("Hello, world!");
 }
+
