@@ -11,7 +11,9 @@ impl Solution {
     fn check(board: &[usize], queen_pos: (usize, usize)) -> bool {
         let (row, col) = queen_pos;
         for i in 0..row {
-            if col == board[i] || (row as i32 - i as i32).abs() == (col as i32 - board[i] as i32).abs() {
+            if col == board[i]
+                || (row as i32 - i as i32).abs() == (col as i32 - board[i] as i32).abs()
+            {
                 return false;
             }
         }
@@ -23,7 +25,7 @@ impl Solution {
             *count += 1;
             return;
         }
-        
+
         for p in 0..size {
             if Self::check(&board[..], (level, p)) {
                 board[level] = p;
@@ -32,13 +34,13 @@ impl Solution {
         }
     }
 
-    pub fn p52_total_n_queens(n: i32) -> i32{
+    pub fn p52_total_n_queens(n: i32) -> i32 {
         // codes
         let mut board = vec![0; n as usize];
         let mut count = 0;
 
         Self::backtrack(&mut board, n as usize, 0, &mut count);
-        count 
+        count
     }
 }
 
@@ -56,4 +58,3 @@ mod tests {
         assert_eq!(Solution::p52_total_n_queens(8), 92);
     }
 }
-

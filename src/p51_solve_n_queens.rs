@@ -10,15 +10,18 @@ pub struct Solution {}
 // backtrack
 impl Solution {
     fn render(board: &Vec<usize>, size: usize) -> Vec<String> {
-        board.into_iter().map(|&i| {
-            ".".repeat(i) + "Q" + &".".repeat(size - i - 1)
-        }).collect()
+        board
+            .into_iter()
+            .map(|&i| ".".repeat(i) + "Q" + &".".repeat(size - i - 1))
+            .collect()
     }
 
     fn check(board: &[usize], queen_pos: (usize, usize)) -> bool {
         let (row, col) = queen_pos;
         for i in 0..row {
-            if col == board[i] || (row as i32 - i as i32).abs() == (col as i32 - board[i] as i32).abs() {
+            if col == board[i]
+                || (row as i32 - i as i32).abs() == (col as i32 - board[i] as i32).abs()
+            {
                 return false;
             }
         }
@@ -30,7 +33,7 @@ impl Solution {
             res.push(Self::render(board, size));
             return;
         }
-        
+
         for p in 0..size {
             if Self::check(&board[..], (level, p)) {
                 board[level] = p;
@@ -64,4 +67,3 @@ mod tests {
         );
     }
 }
-

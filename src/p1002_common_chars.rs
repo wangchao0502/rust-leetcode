@@ -10,7 +10,12 @@ pub struct Solution {}
 // hashmap -> a fixed length array
 impl Solution {
     fn count(s: &str) -> [u8; 26] {
-        s.chars().map(|ch| (ch as usize) - 97).fold([0u8; 26], |mut counts, ch| { counts[ch] += 1; counts })
+        s.chars()
+            .map(|ch| (ch as usize) - 97)
+            .fold([0u8; 26], |mut counts, ch| {
+                counts[ch] += 1;
+                counts
+            })
     }
 
     pub fn p1002_common_chars(a: Vec<String>) -> Vec<String> {

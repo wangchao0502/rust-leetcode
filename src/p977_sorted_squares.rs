@@ -10,7 +10,7 @@ pub struct Solution {}
 impl Solution {
     pub fn p977_sorted_squares(a: Vec<i32>) -> Vec<i32> {
         // codes
-        let a2: Vec<i32> = a.iter().map(|&x| { if x < 0 { -x } else { x } }).collect();
+        let a2: Vec<i32> = a.iter().map(|&x| if x < 0 { -x } else { x }).collect();
         let (mut i, mut j) = (0, a.len() - 1);
         let mut result = vec![];
 
@@ -49,4 +49,3 @@ mod tests {
         );
     }
 }
-
