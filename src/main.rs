@@ -11,6 +11,7 @@ mod p52_total_n_queens;
 mod p530_get_minimum_difference;
 mod p5543_max_length_between_equal_characters;
 mod p5544_find_lex_smallest_string;
+mod p5545_best_team_score;
 mod p75_sort_colors;
 mod p977_sorted_squares;
 mod utils;
