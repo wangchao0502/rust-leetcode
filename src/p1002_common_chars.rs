@@ -7,7 +7,7 @@ pub struct Solution {}
 // add structs
 
 // answers
-// hashmap -> a fixed length array
+// hashmap or a fixed length array
 impl Solution {
     fn count(s: &str) -> [u8; 26] {
         s.chars()
