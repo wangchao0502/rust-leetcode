@@ -6,9 +6,9 @@ pub struct Solution {}
 
 // add structs
 pub struct UnionFind {
-    parents: Vec<usize>,
-    size: Vec<usize>,
-    count: usize,
+    pa: Vec<usize>,
+    sz: Vec<usize>,
+    ct: usize,
 }
 
 impl UnionFind {
@@ -18,16 +18,16 @@ impl UnionFind {
             v[i] = i;
         }
         UnionFind {
-            parents: v,
-            size: vec![1; n],
-            count: n,
+            pa: v,
+            sz: vec![1; n],
+            ct: n,
         }
     }
 
     pub fn find(&mut self, mut p: usize) -> usize {
-        while self.parents[p] != p {
-            self.parents[p] = self.parents[self.parents[p]];
-            p = self.parents[p];
+        while self.pa[p] != p {
+            self.pa[p] = self.pa[self.pa[p]];
+            p = self.pa[p];
         }
         p
     }
@@ -37,22 +37,20 @@ impl UnionFind {
     }
 
     pub fn union(&mut self, p: usize, q: usize) {
-        let i = self.find(p);
-        let j = self.find(q);
+        let mut i = self.find(p);
+        let mut j = self.find(q);
         if i != j {
-            self.count -= 1;
-            if self.size[i] > self.size[j] {
-                self.parents[j] = i;
-                self.size[i] += self.size[j];
-            } else {
-                self.parents[i] = j;
-                self.size[j] += self.size[i];
+            if self.sz[i] > self.sz[j] {
+                std::mem::swap(&mut i, &mut j);
             }
+            self.pa[i] = j;
+            self.sz[j] += self.sz[i];
+            self.ct -= 1;
         }
     }
 
     pub fn count(&self) -> usize {
-        self.count
+        self.ct
     }
 }
 
