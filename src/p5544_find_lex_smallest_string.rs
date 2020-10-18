@@ -56,6 +56,7 @@ impl Solution {
                     for t in (1..n).step_by(2) {
                         bytes[t] = (48 + (bytes[t] as i32 - 48 + a * j) % 10) as u8;
                     }
+                    // 这里有个小trick，如果g为偶数 => th=1 => k=0 => 下面语句不生效 => 永远不改变偶数位
                     for t in (0..n).step_by(2) {
                         bytes[t] = (48 + (bytes[t] as i32 - 48 + a * k) % 10) as u8;
                     }
