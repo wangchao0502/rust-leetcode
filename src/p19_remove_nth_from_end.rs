@@ -18,7 +18,7 @@ impl Solution {
         let mut p2 = dummy.clone();
         // p1 is a mutable pointer to heap space
         let mut p1 = dummy.as_mut();
-        
+
         // p2 go n steps
         for _ in 0..n {
             // unwrap -> Box<ListNode> or Null
