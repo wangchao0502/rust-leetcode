@@ -2,6 +2,7 @@ mod p1002_common_chars;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
 mod p24_swap_pairs;
+mod p26_remove_duplicates;
 mod p2_add_two_numbers;
 mod p344_reverse_string;
 mod p3_length_of_longest_substring;

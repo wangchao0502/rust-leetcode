@@ -33,7 +33,6 @@ mod tests {
         assert_eq!(0, 0);
     }
 }
-
 EOF
 
 # update src/main.rs
@@ -52,7 +51,6 @@ $plist
 fn main() {
     println!("Hello, world!");
 }
-
 EOF
 
 echo "$pname.rs created."
