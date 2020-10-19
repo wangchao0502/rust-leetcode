@@ -34,12 +34,8 @@ mod tests {
     #[test]
     fn p844_backspace_compare_t1() {
         assert_eq!(
-            Solution::p844_backspace_compare(
-                "ab#c".to_string(),
-                "ad#c".to_string()
-            ),
+            Solution::p844_backspace_compare("ab#c".to_string(), "ad#c".to_string()),
             true
         );
     }
 }
-
