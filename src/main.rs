@@ -14,9 +14,11 @@ mod p5543_max_length_between_equal_characters;
 mod p5544_find_lex_smallest_string;
 mod p5545_best_team_score;
 mod p75_sort_colors;
+mod p844_backspace_compare;
 mod p977_sorted_squares;
 mod utils;
 
 fn main() {
     println!("Hello, world!");
 }
+
