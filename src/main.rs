@@ -1,4 +1,5 @@
 mod p1002_common_chars;
+mod p143_reorder_list;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
 mod p24_swap_pairs;
