@@ -17,6 +17,7 @@ mod p5544_find_lex_smallest_string;
 mod p5545_best_team_score;
 mod p75_sort_colors;
 mod p844_backspace_compare;
+mod p925_is_long_pressed_name;
 mod p977_sorted_squares;
 mod utils;
 
