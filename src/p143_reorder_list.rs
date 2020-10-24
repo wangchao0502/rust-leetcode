@@ -34,9 +34,9 @@ impl Solution {
     ) -> Option<Box<ListNode>> {
         match head {
             Some(mut node) => {
-                let next = node.next;
+                let tmp = node.next;
                 node.next = accumulator;
-                Self::reverse(next, Some(node))
+                Self::reverse(tmp, Some(node))
             }
             None => accumulator,
         }
