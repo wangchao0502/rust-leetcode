@@ -20,6 +20,7 @@ mod p5545_best_team_score;
 mod p75_sort_colors;
 mod p763_partition_labels;
 mod p844_backspace_compare;
+mod p845_longest_mountain;
 mod p925_is_long_pressed_name;
 mod p977_sorted_squares;
 mod utils;
