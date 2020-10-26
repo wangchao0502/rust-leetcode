@@ -11,7 +11,7 @@ pub struct Solution {}
 impl Solution {
     fn render(board: &Vec<usize>, size: usize) -> Vec<String> {
         board
-            .into_iter()
+            .iter()
             .map(|&i| ".".repeat(i) + "Q" + &".".repeat(size - i - 1))
             .collect()
     }
