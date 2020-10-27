@@ -13,7 +13,7 @@ impl Solution {
         // codes
         let mut sorted = nums.clone();
         sorted.sort();
-        
+
         use std::collections::HashMap;
         let mut map = HashMap::new();
 

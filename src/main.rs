@@ -2,6 +2,7 @@ mod p1002_common_chars;
 mod p1024_video_stitching;
 mod p1365_smaller_numbers_than_current;
 mod p143_reorder_list;
+mod p144_preorder_traversal;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
 mod p234_is_palindrome;
