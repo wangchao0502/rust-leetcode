@@ -10,6 +10,7 @@ pub struct Solution {}
 // add structs
 
 // answers
+// preorder traverse, dfs
 impl Solution {
     fn preorder(root: &Option<Rc<RefCell<TreeNode>>>, ans: &mut Vec<i32>) {
         if let Some(node) = root.as_ref() {

@@ -21,6 +21,7 @@ mod p5544_find_lex_smallest_string;
 mod p5545_best_team_score;
 mod p75_sort_colors;
 mod p763_partition_labels;
+mod p834_sum_of_distances_in_tree;
 mod p844_backspace_compare;
 mod p845_longest_mountain;
 mod p925_is_long_pressed_name;
