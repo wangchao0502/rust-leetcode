@@ -4,6 +4,7 @@ mod p1207_unique_occurrences;
 mod p1365_smaller_numbers_than_current;
 mod p143_reorder_list;
 mod p144_preorder_traversal;
+mod p18_four_sum;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
 mod p234_is_palindrome;
