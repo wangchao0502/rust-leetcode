@@ -15,6 +15,7 @@ mod p2_add_two_numbers;
 mod p344_reverse_string;
 mod p3_length_of_longest_substring;
 mod p416_can_partition;
+mod p463_island_perimeter;
 mod p5128_are_connected;
 mod p51_solve_n_queens;
 mod p52_total_n_queens;
