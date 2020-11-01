@@ -13,6 +13,7 @@ mod p24_swap_pairs;
 mod p26_remove_duplicates;
 mod p2_add_two_numbers;
 mod p344_reverse_string;
+mod p381_randomized_collection;
 mod p3_length_of_longest_substring;
 mod p416_can_partition;
 mod p463_island_perimeter;
