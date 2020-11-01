@@ -17,6 +17,7 @@ mod p2_add_two_numbers;
 mod p344_reverse_string;
 mod p381_randomized_collection;
 mod p3_length_of_longest_substring;
+mod p401_read_binary_watch;
 mod p416_can_partition;
 mod p463_island_perimeter;
 mod p5128_are_connected;
