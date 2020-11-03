@@ -11,8 +11,8 @@ impl Solution {
     pub fn p349_intersection(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
         // codes
         use std::collections::HashSet;
-        let mut m1: HashSet<_> = nums1.iter().cloned().collect();
-        let mut m2: HashSet<_> = nums2.iter().cloned().collect();
+        let m1: HashSet<_> = nums1.iter().cloned().collect();
+        let m2: HashSet<_> = nums2.iter().cloned().collect();
         m1.intersection(&m2).cloned().collect()
     }
 }
