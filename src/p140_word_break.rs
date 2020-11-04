@@ -8,9 +8,9 @@ pub struct Solution {}
 // add structs
 
 // answers
-// backtrace get all answers, use memo to make faster
+// backtrack get all answers, use memo to make faster
 impl Solution {
-    fn backtrace(
+    fn backtrack(
         s: &str,
         words: &[String],
         memo: &mut HashMap<String, Vec<String>>,
@@ -26,7 +26,7 @@ impl Solution {
                     ret.push(word.clone());
                     continue;
                 }
-                for e in Self::backtrace(&s[word.len()..], words, memo).iter() {
+                for e in Self::backtrack(&s[word.len()..], words, memo).iter() {
                     let mut ss = word.clone();
                     ss.push(' ');
                     ret.push(ss + e);
@@ -40,7 +40,7 @@ impl Solution {
     pub fn p140_word_break(s: String, word_dict: Vec<String>) -> Vec<String> {
         // codes
         let mut memo: HashMap<String, Vec<String>> = HashMap::new();
-        Self::backtrace(&s, &word_dict, &mut memo)
+        Self::backtrack(&s, &word_dict, &mut memo)
     }
 }
 
