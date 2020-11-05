@@ -1,6 +1,7 @@
 mod p1002_common_chars;
 mod p1024_video_stitching;
 mod p1207_unique_occurrences;
+mod p127_ladder_length;
 mod p129_sum_numbers;
 mod p1365_smaller_numbers_than_current;
 mod p139_word_break;
