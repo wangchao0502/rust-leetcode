@@ -16,6 +16,7 @@ mod p234_is_palindrome;
 mod p24_swap_pairs;
 mod p26_remove_duplicates;
 mod p2_add_two_numbers;
+mod p327_count_range_sum;
 mod p344_reverse_string;
 mod p349_intersection;
 mod p381_randomized_collection;
