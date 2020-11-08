@@ -32,12 +32,13 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::build_tree;
 
     #[test]
     fn p530_get_minimum_difference_t1() {
         assert_eq!(
-            Solution::p530_get_minimum_difference(build_tree(&vec![9, 7, 15, 3, NULL, NULL, 20])),
+            Solution::p530_get_minimum_difference(build_tree_ignore_parent(&vec![
+                9, 7, 15, 3, NULL, NULL, 20
+            ])),
             2
         );
     }
@@ -53,8 +54,8 @@ mod tests {
     #[test]
     fn p530_get_minimum_difference_t3() {
         assert_eq!(
-            Solution::p530_get_minimum_difference(build_tree(&vec![
-                4, 3, 5, 2, NULL, NULL, 6, 1, NULL, NULL, NULL, NULL, NULL, NULL, 7
+            Solution::p530_get_minimum_difference(build_tree_ignore_parent(&vec![
+                4, 3, 5, 2, NULL, NULL, 6, 1, NULL, NULL, 7
             ])),
             1
         );

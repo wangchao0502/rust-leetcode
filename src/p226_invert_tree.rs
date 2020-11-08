@@ -26,7 +26,7 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::build_tree;
+    use crate::utils::tree_node::*;
 
     #[test]
     fn p226_invert_tree_t1() {

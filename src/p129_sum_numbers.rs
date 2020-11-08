@@ -49,17 +49,20 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::build_tree;
+    use crate::utils::tree_node::*;
 
     #[test]
     fn p129_sum_numbers_t1() {
-        assert_eq!(Solution::p129_sum_numbers(build_tree(&vec![1, 2, 3])), 25);
+        assert_eq!(
+            Solution::p129_sum_numbers(build_tree_ignore_parent(&vec![1, 2, 3])),
+            25
+        );
     }
 
     #[test]
     fn p129_sum_numbers_t2() {
         assert_eq!(
-            Solution::p129_sum_numbers(build_tree(&vec![4, 9, 0, 5, 1])),
+            Solution::p129_sum_numbers(build_tree_ignore_parent(&vec![4, 9, 0, 5, 1])),
             1026
         );
     }

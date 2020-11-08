@@ -37,7 +37,7 @@ mod tests {
     #[test]
     fn p144_preorder_traversal_t1() {
         assert_eq!(
-            Solution::p144_preorder_traversal(build_tree(&vec![1, NULL, 2, NULL, NULL, 3])),
+            Solution::p144_preorder_traversal(build_tree_ignore_parent(&vec![1, NULL, 2, 3])),
             vec![1, 2, 3]
         );
     }
