@@ -20,16 +20,21 @@ impl Solution {
         t2: Option<Rc<RefCell<TreeNode>>>,
     ) -> Option<Rc<RefCell<TreeNode>>> {
         // codes
-        match (t1.clone(), t2) {
-            (Some(p), Some(q)) => {
-                let (mut p, q) = (p.borrow_mut(), q.borrow());
-                p.val += q.val;
-                p.left = Self::p617_merge_trees(p.left.clone(), q.left.clone());
-                p.right = Self::p617_merge_trees(p.right.clone(), q.right.clone());
-                t1
-            }
-            (t, None) | (None, t) => t,
+        if t1.is_none() {
+            return t2;
         }
+        if t2.is_none() {
+            return t1;
+        }
+
+        let b1 = t1.unwrap();
+        let b1 = b1.borrow();
+
+        Some(Rc::new(RefCell::new(TreeNode {
+            val: b1.val + b2.val,
+            left: Solution::p617_merge_trees(b1.left.clone(), b2.left.clone()),
+            right: Solution::p617_merge_trees(b1.right.clone(), b2.right.clone()),
+        })))
     }
 }
 
