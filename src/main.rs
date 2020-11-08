@@ -13,6 +13,7 @@ mod p144_preorder_traversal;
 mod p18_four_sum;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
+mod p226_invert_tree;
 mod p234_is_palindrome;
 mod p24_swap_pairs;
 mod p26_remove_duplicates;

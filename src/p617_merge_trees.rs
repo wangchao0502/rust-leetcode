@@ -29,6 +29,8 @@ impl Solution {
 
         let b1 = t1.unwrap();
         let b1 = b1.borrow();
+        let b2 = t2.unwrap();
+        let b2 = b2.borrow();
 
         Some(Rc::new(RefCell::new(TreeNode {
             val: b1.val + b2.val,
