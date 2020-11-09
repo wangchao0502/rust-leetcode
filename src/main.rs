@@ -44,6 +44,7 @@ mod p845_longest_mountain;
 mod p867_transpose;
 mod p925_is_long_pressed_name;
 mod p941_valid_mountain_array;
+mod p973_k_closest;
 mod p977_sorted_squares;
 mod utils;
 
