@@ -44,6 +44,7 @@ mod p834_sum_of_distances_in_tree;
 mod p844_backspace_compare;
 mod p845_longest_mountain;
 mod p867_transpose;
+mod p922_sort_array_by_parity_ii;
 mod p925_is_long_pressed_name;
 mod p941_valid_mountain_array;
 mod p973_k_closest;
