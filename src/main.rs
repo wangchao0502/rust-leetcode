@@ -1,5 +1,6 @@
 mod p1002_common_chars;
 mod p1024_video_stitching;
+mod p1122_relative_sort_array;
 mod p1207_unique_occurrences;
 mod p122_max_profit;
 mod p127_ladder_length;
