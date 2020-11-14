@@ -12,7 +12,7 @@ cat <<EOF > $fpath
 
 pub struct Solution {}
 
-// add structs
+// problem description
 
 // answers
 impl Solution {
