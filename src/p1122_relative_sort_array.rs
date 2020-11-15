@@ -68,6 +68,9 @@ mod tests {
 
     #[test]
     fn p1122_relative_sort_array_t3() {
-        assert_eq!(Solution::p1122_relative_sort_array(vec![1], vec![]), vec![1]);
+        assert_eq!(
+            Solution::p1122_relative_sort_array(vec![1], vec![]),
+            vec![1]
+        );
     }
 }
