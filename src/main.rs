@@ -29,6 +29,7 @@ mod p381_randomized_collection;
 mod p3_length_of_longest_substring;
 mod p401_read_binary_watch;
 mod p402_remove_kdigits;
+mod p406_reconstruct_queue;
 mod p416_can_partition;
 mod p463_island_perimeter;
 mod p4_find_median_sorted_arrays;
