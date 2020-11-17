@@ -16,17 +16,13 @@ pub struct Solution {}
 // backtrack
 impl Solution {
     pub fn p406_reconstruct_queue(mut people: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
-        if people.len() <= 1 {
-            people
-        } else {
-            people.sort_unstable_by_key(|x| ((!x[0]) as i64) << 32 | x[1] as i64);
-            let mut d = people.drain(..);
-            let mut new_people = vec![d.next().unwrap()];
-            for i in d {
-                new_people.insert(i[1] as usize, i)
-            }
-            new_people
+        let mut res = Vec::with_capacity(people.len());
+        people.sort_unstable_by_key(|v| (-v[0], v[1]));
+        for vec in people {
+            println!("{:?}", res);
+            res.insert(vec[1] as usize, vec);
         }
+        res
     }
 }
 
