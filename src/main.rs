@@ -1,6 +1,7 @@
 mod p1002_common_chars;
 mod p1024_video_stitching;
 mod p1030_all_cells_dist_order;
+mod p104_max_depth;
 mod p1122_relative_sort_array;
 mod p1207_unique_occurrences;
 mod p122_max_profit;
