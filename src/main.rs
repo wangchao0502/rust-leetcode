@@ -54,6 +54,7 @@ mod p867_transpose;
 mod p897_increasing_bst;
 mod p922_sort_array_by_parity_ii;
 mod p925_is_long_pressed_name;
+mod p938_range_sum_bst;
 mod p941_valid_mountain_array;
 mod p973_k_closest;
 mod p977_sorted_squares;
