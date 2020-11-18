@@ -6,6 +6,7 @@ mod p1207_unique_occurrences;
 mod p122_max_profit;
 mod p127_ladder_length;
 mod p129_sum_numbers;
+mod p134_can_complete_circuit;
 mod p1356_sort_by_bits;
 mod p1365_smaller_numbers_than_current;
 mod p139_word_break;
