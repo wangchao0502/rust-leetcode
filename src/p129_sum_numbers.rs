@@ -25,15 +25,15 @@ pub struct Solution {}
 // answers
 // dfs
 impl Solution {
-    fn dfs(root: &Option<Rc<RefCell<TreeNode>>>, pre: i32, nums: &mut Vec<i32>) {
-        if let Some(node) = root.as_ref() {
+    fn dfs(root: Option<&Rc<RefCell<TreeNode>>>, pre: i32, nums: &mut Vec<i32>) {
+        if let Some(node) = root {
             let node = node.borrow();
             let curr = pre * 10 + node.val;
             if node.left.is_none() && node.right.is_none() {
                 nums.push(curr);
             } else {
-                Self::dfs(&node.left, curr, nums);
-                Self::dfs(&node.right, curr, nums);
+                Self::dfs(node.left.as_ref(), curr, nums);
+                Self::dfs(node.right.as_ref(), curr, nums);
             }
         }
     }
@@ -41,7 +41,7 @@ impl Solution {
     pub fn p129_sum_numbers(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         // codes
         let mut nums: Vec<i32> = vec![];
-        Self::dfs(&root, 0, &mut nums);
+        Self::dfs(root.as_ref(), 0, &mut nums);
         nums.iter().sum()
     }
 }

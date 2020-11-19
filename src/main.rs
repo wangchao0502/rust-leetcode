@@ -11,6 +11,7 @@ mod p129_sum_numbers;
 mod p134_can_complete_circuit;
 mod p1356_sort_by_bits;
 mod p1365_smaller_numbers_than_current;
+mod p1382_balance_bst;
 mod p139_word_break;
 mod p140_word_break;
 mod p143_reorder_list;

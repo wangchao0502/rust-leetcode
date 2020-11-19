@@ -15,22 +15,26 @@ pub struct Solution {}
 
 // answers
 impl Solution {
+    fn helper(root: Option<&Rc<RefCell<TreeNode>>>, val: i32) -> Option<Rc<RefCell<TreeNode>>> {
+        if let Some(root) = root {
+            if root.borrow().val == val {
+                Some(Rc::clone(root))
+            } else if root.borrow().val > val {
+                Self::helper(root.borrow().left.as_ref(), val)
+            } else {
+                Self::helper(root.borrow().right.as_ref(), val)
+            }
+        } else {
+            None
+        }
+    }
+
     pub fn p700_search_bst(
         root: Option<Rc<RefCell<TreeNode>>>,
         val: i32,
     ) -> Option<Rc<RefCell<TreeNode>>> {
         // codes
-        if let Some(root) = root {
-            if root.borrow().val == val {
-                Some(root)
-            } else if root.borrow().val > val {
-                Self::p700_search_bst(root.borrow().left.clone(), val)
-            } else {
-                Self::p700_search_bst(root.borrow().right.clone(), val)
-            }
-        } else {
-            None
-        }
+        Self::helper(root.as_ref(), val)
     }
 }
 

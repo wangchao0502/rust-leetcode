@@ -13,30 +13,32 @@ pub struct Solution {}
 
 // answers
 impl Solution {
-    fn inorder(root: Option<Rc<RefCell<TreeNode>>>, nums: &mut Vec<i32>) {
+    fn inorder(root: Option<&Rc<RefCell<TreeNode>>>, arr: &mut Vec<i32>) {
         if let Some(root) = root {
-            Self::inorder(root.borrow().left.clone(), nums);
-            nums.push(root.borrow().val);
-            Self::inorder(root.borrow().right.clone(), nums);
+            Self::inorder(root.borrow().left.as_ref(), arr);
+            arr.push(root.borrow().val);
+            Self::inorder(root.borrow().right.as_ref(), arr);
         }
     }
     pub fn p897_increasing_bst(
         root: Option<Rc<RefCell<TreeNode>>>,
     ) -> Option<Rc<RefCell<TreeNode>>> {
         // codes
-        let mut nums: Vec<i32> = vec![];
-        Self::inorder(root, &mut nums);
+        let mut arr = vec![];
+        Self::inorder(root.as_ref(), &mut arr);
 
-        let mut curr = Some(Rc::new(RefCell::new(TreeNode::new(0)))).clone();
-        let mut head = curr.clone();
+        let dummy = Rc::new(RefCell::new(TreeNode::new(0)));
+        let mut cur = dummy.clone();
+        let mut head = None;
 
         // build tree
-        for i in nums {
-            curr.as_ref().unwrap().borrow_mut().right =
-                Some(Rc::new(RefCell::new(TreeNode::new(i))));
-            curr = curr.clone().unwrap().borrow().right.clone();
-        }
-        head = head.clone().unwrap().borrow().right.clone();
+        arr.into_iter().for_each(|val| {
+            let node = Rc::new(RefCell::new(TreeNode::new(val)));
+            cur.borrow_mut().right = Some(node.clone());
+            head.get_or_insert(node.clone());
+            cur = node;
+        });
+
         head
     }
 }
