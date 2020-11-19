@@ -27,10 +27,10 @@ mod tests {
 
     #[test]
     fn ${pname}_t1() {
-        // let mut input = 0;
-
-        // Solution::$pname(&mut input);
-        assert_eq!(0, 0);
+        assert_eq!(
+            Solution::$pname(),
+            0
+        );
     }
 }
 EOF

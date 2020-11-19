@@ -22,6 +22,7 @@ mod p226_invert_tree;
 mod p234_is_palindrome;
 mod p24_swap_pairs;
 mod p26_remove_duplicates;
+mod p283_move_zeroes;
 mod p2_add_two_numbers;
 mod p31_next_permutation;
 mod p327_count_range_sum;
