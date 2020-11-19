@@ -22,13 +22,11 @@ impl Solution {
         match (t1, t2) {
             (None, None) => None,
             (None, t) | (t, None) => Some(Rc::clone(t.unwrap())),
-            (Some(t1), Some(t2)) => {
-                Some(Rc::new(RefCell::new(TreeNode {
-                    val: t1.borrow().val + t2.borrow().val,
-                    left: Self::helper(t1.borrow().left.as_ref(), t2.borrow().left.as_ref()),
-                    right: Self::helper(t2.borrow().right.as_ref(), t1.borrow().right.as_ref()),
-                })))
-            }
+            (Some(t1), Some(t2)) => Some(Rc::new(RefCell::new(TreeNode {
+                val: t1.borrow().val + t2.borrow().val,
+                left: Self::helper(t1.borrow().left.as_ref(), t2.borrow().left.as_ref()),
+                right: Self::helper(t2.borrow().right.as_ref(), t1.borrow().right.as_ref()),
+            }))),
         }
     }
 
