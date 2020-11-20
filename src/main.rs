@@ -16,6 +16,7 @@ mod p139_word_break;
 mod p140_word_break;
 mod p143_reorder_list;
 mod p144_preorder_traversal;
+mod p147_insertion_sort_list;
 mod p18_four_sum;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
