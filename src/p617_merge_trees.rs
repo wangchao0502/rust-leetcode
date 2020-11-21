@@ -16,16 +16,16 @@ pub struct Solution {}
 // answers
 impl Solution {
     fn helper(
-        t1: Option<&Rc<RefCell<TreeNode>>>,
-        t2: Option<&Rc<RefCell<TreeNode>>>,
+        t1: &Option<Rc<RefCell<TreeNode>>>,
+        t2: &Option<Rc<RefCell<TreeNode>>>,
     ) -> Option<Rc<RefCell<TreeNode>>> {
         match (t1, t2) {
             (None, None) => None,
-            (None, t) | (t, None) => Some(Rc::clone(t.unwrap())),
+            (None, t) | (t, None) => t.clone(),
             (Some(t1), Some(t2)) => Some(Rc::new(RefCell::new(TreeNode {
                 val: t1.borrow().val + t2.borrow().val,
-                left: Self::helper(t1.borrow().left.as_ref(), t2.borrow().left.as_ref()),
-                right: Self::helper(t2.borrow().right.as_ref(), t1.borrow().right.as_ref()),
+                left: Self::helper(&t1.borrow().left, &t2.borrow().left),
+                right: Self::helper(&t2.borrow().right, &t1.borrow().right),
             }))),
         }
     }
@@ -34,7 +34,7 @@ impl Solution {
         t1: Option<Rc<RefCell<TreeNode>>>,
         t2: Option<Rc<RefCell<TreeNode>>>,
     ) -> Option<Rc<RefCell<TreeNode>>> {
-        Self::helper(t1.as_ref(), t2.as_ref())
+        Self::helper(&t1, &t2)
     }
 }
 
