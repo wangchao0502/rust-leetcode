@@ -14,7 +14,10 @@ pub struct Solution {}
 impl Solution {
     pub fn p101_is_symmetric(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
         // codes
-        fn check(left: &Option<Rc<RefCell<TreeNode>>>, right: &Option<Rc<RefCell<TreeNode>>>) -> bool {
+        fn check(
+            left: &Option<Rc<RefCell<TreeNode>>>,
+            right: &Option<Rc<RefCell<TreeNode>>>,
+        ) -> bool {
             match (left, right) {
                 (None, None) => true,
                 (Some(l), Some(r)) => {
