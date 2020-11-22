@@ -66,6 +66,7 @@ mod p922_sort_array_by_parity_ii;
 mod p925_is_long_pressed_name;
 mod p938_range_sum_bst;
 mod p941_valid_mountain_array;
+mod p94_inorder_traversal;
 mod p973_k_closest;
 mod p977_sorted_squares;
 mod utils;
