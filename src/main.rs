@@ -25,6 +25,7 @@ mod p1_two_sum;
 mod p206_reverse_list;
 mod p222_count_nodes;
 mod p226_invert_tree;
+mod p230_kth_smallest;
 mod p234_is_palindrome;
 mod p242_is_anagram;
 mod p24_swap_pairs;
