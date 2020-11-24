@@ -59,8 +59,25 @@ impl Solution {
     }
 
     pub fn p105_build_tree(preorder: Vec<i32>, inorder: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-        // codes
+        // solution 1
         Self::helper(&preorder, (0, preorder.len()), &inorder, (0, inorder.len()))
+
+        // solution 2, use slice
+        // fn bt(preorder: &[i32], inorder: &[i32]) -> Option<Rc<RefCell<TreeNode>>> {
+        //     if preorder.len() == 0 || inorder.len() == 0 {
+        //         return None;
+        //     }
+        //     let root = Rc::new(RefCell::new(TreeNode {
+        //         val: preorder[0],
+        //         left: None,
+        //         right: None,
+        //     }));
+        //     let i = inorder.iter().position(|&v| v == preorder[0]).unwrap();
+        //     root.borrow_mut().left = bt(&preorder[1..1 + i], &inorder[..i]);
+        //     root.borrow_mut().right = bt(&preorder[1 + i..], &inorder[i + 1..]);
+        //     Some(root)
+        // }
+        // bt(&preorder, &inorder)
     }
 }
 
