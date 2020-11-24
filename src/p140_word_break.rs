@@ -47,21 +47,16 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use leetcode_prelude::vec_string;
 
     #[test]
     fn p140_word_break_t1() {
         assert_eq!(
             Solution::p140_word_break(
                 "catsanddog".to_string(),
-                vec![
-                    "cat".to_string(),
-                    "cats".to_string(),
-                    "and".to_string(),
-                    "sand".to_string(),
-                    "dog".to_string(),
-                ]
+                vec_string!["cat", "cats", "and", "sand", "dog"]
             ),
-            vec!["cat sand dog".to_string(), "cats and dog".to_string()]
+            vec_string!["cat sand dog", "cats and dog"]
         );
     }
 
@@ -70,18 +65,12 @@ mod tests {
         assert_eq!(
             Solution::p140_word_break(
                 "pineapplepenapple".to_string(),
-                vec![
-                    "apple".to_string(),
-                    "pen".to_string(),
-                    "applepen".to_string(),
-                    "pine".to_string(),
-                    "pineapple".to_string()
-                ]
+                vec_string!["apple", "pen", "applepen", "pine", "pineapple"]
             ),
-            vec![
-                "pine apple pen apple".to_string(),
-                "pine applepen apple".to_string(),
-                "pineapple pen apple".to_string(),
+            vec_string![
+                "pine apple pen apple",
+                "pine applepen apple",
+                "pineapple pen apple"
             ]
         );
     }

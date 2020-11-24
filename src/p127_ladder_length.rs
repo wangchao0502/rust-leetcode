@@ -86,6 +86,7 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use leetcode_prelude::vec_string;
 
     #[test]
     fn p127_ladder_length_t1() {
@@ -93,14 +94,7 @@ mod tests {
             Solution::p127_ladder_length(
                 "hit".to_string(),
                 "cog".to_string(),
-                vec![
-                    "hot".to_string(),
-                    "dot".to_string(),
-                    "dog".to_string(),
-                    "lot".to_string(),
-                    "log".to_string(),
-                    "cog".to_string()
-                ]
+                vec_string!["hot", "dot", "dog", "lot", "log", "cog"]
             ),
             5
         );

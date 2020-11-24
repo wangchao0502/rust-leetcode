@@ -44,16 +44,13 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use leetcode_prelude::vec_string;
 
     #[test]
     fn p1002_common_chars_t1() {
         assert_eq!(
-            Solution::p1002_common_chars(vec![
-                "bella".to_owned(),
-                "label".to_owned(),
-                "roller".to_owned(),
-            ]),
-            vec!["e".to_owned(), "l".to_owned(), "l".to_owned()]
+            Solution::p1002_common_chars(vec_string!["bella", "label", "roller"]),
+            vec_string!["e", "l", "l"]
         );
     }
 }
