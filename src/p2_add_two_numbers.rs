@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::list_node::ListNode;
+use leetcode_prelude::ListNode;
 
 pub struct Solution {}
 
@@ -43,16 +43,13 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::list_node::*;
+    use leetcode_prelude::linkedlist;
 
     #[test]
     fn p2_add_two_numbers_t1() {
         assert_eq!(
-            Solution::p2_add_two_numbers(
-                build_list_node(&vec![2, 4, 3]),
-                build_list_node(&vec![5, 6, 4])
-            ),
-            build_list_node(&vec![7, 0, 8])
+            Solution::p2_add_two_numbers(linkedlist![2, 4, 3], linkedlist![5, 6, 4]),
+            linkedlist![7, 0, 8]
         );
     }
 }

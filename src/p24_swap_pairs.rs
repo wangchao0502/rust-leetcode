@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::list_node::ListNode;
+use leetcode_prelude::ListNode;
 
 pub struct Solution {}
 
@@ -26,33 +26,33 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::list_node::*;
+    use leetcode_prelude::linkedlist;
 
     #[test]
     fn p24_swap_pairs_t1() {
-        let input = build_list_node(&vec![1, 2, 3, 4]);
+        let input = linkedlist![1, 2, 3, 4];
         let output = Solution::p24_swap_pairs(input);
-        assert_eq!(output, build_list_node(&vec![2, 1, 4, 3]));
+        assert_eq!(output, linkedlist![2, 1, 4, 3]);
     }
 
     #[test]
     fn p24_swap_pairs_t2() {
-        let input = build_list_node(&vec![]);
+        let input = linkedlist![];
         let output = Solution::p24_swap_pairs(input);
-        assert_eq!(output, build_list_node(&vec![]));
+        assert_eq!(output, linkedlist![]);
     }
 
     #[test]
     fn p24_swap_pairs_t3() {
-        let input = build_list_node(&vec![1]);
+        let input = linkedlist![1];
         let output = Solution::p24_swap_pairs(input);
-        assert_eq!(output, build_list_node(&vec![1]));
+        assert_eq!(output, linkedlist![1]);
     }
 
     #[test]
     fn p24_swap_pairs_t4() {
-        let input = build_list_node(&vec![1, 2, 3, 4, 5]);
+        let input = linkedlist![1, 2, 3, 4, 5];
         let output = Solution::p24_swap_pairs(input);
-        assert_eq!(output, build_list_node(&vec![2, 1, 4, 3, 5]));
+        assert_eq!(output, linkedlist![2, 1, 4, 3, 5]);
     }
 }

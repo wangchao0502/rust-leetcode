@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::list_node::ListNode;
+use leetcode_prelude::ListNode;
 
 pub struct Solution {}
 
@@ -39,29 +39,29 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::list_node::build_list_node;
+    use leetcode_prelude::linkedlist;
 
     #[test]
     fn p328_odd_even_list_t1() {
         assert_eq!(
-            Solution::p328_odd_even_list(build_list_node(&vec![1, 2, 3, 4, 5])),
-            build_list_node(&vec![1, 3, 5, 2, 4])
+            Solution::p328_odd_even_list(linkedlist![1, 2, 3, 4, 5]),
+            linkedlist![1, 3, 5, 2, 4]
         );
     }
 
     #[test]
     fn p328_odd_even_list_t2() {
         assert_eq!(
-            Solution::p328_odd_even_list(build_list_node(&vec![2, 1, 3, 5, 6, 4, 7])),
-            build_list_node(&vec![2, 3, 6, 7, 1, 5, 4])
+            Solution::p328_odd_even_list(linkedlist![2, 1, 3, 5, 6, 4, 7]),
+            linkedlist![2, 3, 6, 7, 1, 5, 4]
         );
     }
 
     #[test]
     fn p328_odd_even_list_t3() {
         assert_eq!(
-            Solution::p328_odd_even_list(build_list_node(&vec![2])),
-            build_list_node(&vec![2])
+            Solution::p328_odd_even_list(linkedlist![2]),
+            linkedlist![2]
         );
     }
 }

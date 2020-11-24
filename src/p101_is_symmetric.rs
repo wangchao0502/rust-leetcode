@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -34,12 +34,12 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::{build_tree, NULL};
+    use leetcode_prelude::btree;
 
     #[test]
     fn p101_is_symmetric_t1() {
         assert_eq!(
-            Solution::p101_is_symmetric(build_tree(&vec![1, 2, 2, NULL, 3, NULL, 3])),
+            Solution::p101_is_symmetric(btree![1, 2, 2, null, 3, null, 3]),
             false
         );
     }

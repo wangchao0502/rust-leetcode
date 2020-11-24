@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::list_node::ListNode;
+use leetcode_prelude::ListNode;
 
 pub struct Solution {}
 
@@ -21,7 +21,7 @@ impl Solution {
 
         // p2 go n steps
         for _ in 0..n {
-            // unwrap -> Box<ListNode> or Null
+            // unwrap -> Box<ListNode> or null
             p2 = p2.next.unwrap();
         }
 
@@ -40,13 +40,13 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::list_node::build_list_node;
+    use leetcode_prelude::linkedlist;
 
     #[test]
     fn p19_remove_nth_from_end_t1() {
         assert_eq!(
-            Solution::p19_remove_nth_from_end(build_list_node(&vec![1, 2, 3, 4, 5]), 2),
-            build_list_node(&vec![1, 2, 3, 5])
+            Solution::p19_remove_nth_from_end(linkedlist![1, 2, 3, 4, 5], 2),
+            linkedlist![1, 2, 3, 5]
         );
     }
 }

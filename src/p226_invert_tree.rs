@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -39,13 +39,13 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::*;
+    use leetcode_prelude::btree;
 
     #[test]
     fn p226_invert_tree_t1() {
         assert_eq!(
-            Solution::p226_invert_tree(build_tree(&vec![4, 2, 7, 1, 3, 6, 9])),
-            build_tree(&vec![4, 7, 2, 9, 6, 3, 1])
+            Solution::p226_invert_tree(btree![4, 2, 7, 1, 3, 6, 9]),
+            btree![4, 7, 2, 9, 6, 3, 1]
         );
     }
 }

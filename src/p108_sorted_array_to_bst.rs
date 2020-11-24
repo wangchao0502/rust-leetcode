@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -35,13 +35,13 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::{build_tree_ignore_parent, NULL};
+    use leetcode_prelude::btree;
 
     #[test]
     fn p108_sorted_array_to_bst_t1() {
         assert_eq!(
             Solution::p108_sorted_array_to_bst(vec![-10, -3, 0, 5, 9]),
-            build_tree_ignore_parent(&vec![0, -3, 9, -10, NULL, 5])
+            btree![0, -3, 9, -10, null, 5]
         );
     }
 }

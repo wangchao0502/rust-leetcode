@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -50,12 +50,12 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::{build_tree, NULL};
+    use leetcode_prelude::btree;
 
     #[test]
     fn p637_average_of_levels_t1() {
         assert_eq!(
-            Solution::p637_average_of_levels(build_tree(&vec![3, 9, 20, NULL, NULL, 15, 7])),
+            Solution::p637_average_of_levels(btree![3, 9, 20, null, null, 15, 7]),
             vec![3.0, 14.5, 11.0]
         );
     }

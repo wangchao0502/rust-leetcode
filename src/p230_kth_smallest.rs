@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -50,19 +50,19 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::{build_tree, NULL};
+    use leetcode_prelude::btree;
 
     #[test]
     fn p230_kth_smallest_t1() {
         assert_eq!(
-            Solution::p230_kth_smallest(build_tree(&vec![3, 1, 4, NULL, 2]), 1),
+            Solution::p230_kth_smallest(btree![3, 1, 4, null, 2], 1),
             1
         );
     }
     #[test]
     fn p230_kth_smallest_t2() {
         assert_eq!(
-            Solution::p230_kth_smallest(build_tree(&vec![5, 3, 6, 2, 4, NULL, NULL, 1]), 3),
+            Solution::p230_kth_smallest(btree![5, 3, 6, 2, 4, null, null, 1], 3),
             3
         );
     }

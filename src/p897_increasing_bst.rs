@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -46,17 +46,17 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::{build_tree_ignore_parent, NULL};
+    use leetcode_prelude::btree;
 
     #[test]
     fn p897_increasing_bst_t1() {
         assert_eq!(
-            Solution::p897_increasing_bst(build_tree_ignore_parent(&vec![
-                5, 3, 6, 2, 4, NULL, 8, 1, NULL, NULL, NULL, 7, 9
-            ])),
-            build_tree_ignore_parent(&vec![
-                1, NULL, 2, NULL, 3, NULL, 4, NULL, 5, NULL, 6, NULL, 7, NULL, 8, NULL, 9
-            ])
+            Solution::p897_increasing_bst(btree![
+                5, 3, 6, 2, 4, null, 8, 1, null, null, null, 7, 9
+            ]),
+            btree![
+                1, null, 2, null, 3, null, 4, null, 5, null, 6, null, 7, null, 8, null, 9
+            ]
         );
     }
 }

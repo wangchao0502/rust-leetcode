@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::list_node::ListNode;
+use leetcode_prelude::ListNode;
 
 pub struct Solution {}
 
@@ -25,13 +25,13 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::list_node::build_list_node;
+    use leetcode_prelude::linkedlist;
 
     #[test]
     fn p206_reverse_list_t1() {
         assert_eq!(
-            Solution::p206_reverse_list(build_list_node(&vec![1, 2, 3, 4])),
-            build_list_node(&vec![4, 3, 2, 1])
+            Solution::p206_reverse_list(linkedlist![1, 2, 3, 4]),
+            linkedlist![4, 3, 2, 1]
         );
     }
 }

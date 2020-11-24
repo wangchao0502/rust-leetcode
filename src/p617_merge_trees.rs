@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -41,16 +41,16 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::{build_tree, NULL};
+    use leetcode_prelude::btree;
 
     #[test]
     fn p617_merge_trees_t1() {
         assert_eq!(
             Solution::p617_merge_trees(
-                build_tree(&vec![1, 3, 2, 5]),
-                build_tree(&vec![2, 1, 3, NULL, 4, NULL, 7])
+                btree![1, 3, 2, 5],
+                btree![2, 1, 3, null, 4, null, 7]
             ),
-            build_tree(&vec![3, 4, 5, 5, 4, NULL, 7])
+            btree![3, 4, 5, 5, 4, null, 7]
         );
     }
 }

@@ -72,7 +72,6 @@ mod p941_valid_mountain_array;
 mod p94_inorder_traversal;
 mod p973_k_closest;
 mod p977_sorted_squares;
-mod utils;
 
 fn main() {
     println!("Hello, world!");

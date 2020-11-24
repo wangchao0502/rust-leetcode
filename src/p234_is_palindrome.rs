@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::list_node::ListNode;
+use leetcode_prelude::ListNode;
 
 pub struct Solution {}
 
@@ -36,12 +36,12 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::list_node::build_list_node;
+    use leetcode_prelude::linkedlist;
 
     #[test]
     fn p234_is_palindrome_t1() {
         assert_eq!(
-            Solution::p234_is_palindrome(build_list_node(&vec![1, 2, 2, 1])),
+            Solution::p234_is_palindrome(linkedlist![1, 2, 2, 1]),
             true
         );
     }
@@ -49,7 +49,7 @@ mod tests {
     #[test]
     fn p234_is_palindrome_t2() {
         assert_eq!(
-            Solution::p234_is_palindrome(build_list_node(&vec![1, 2])),
+            Solution::p234_is_palindrome(linkedlist![1, 2]),
             false
         );
     }
@@ -57,7 +57,7 @@ mod tests {
     #[test]
     fn p234_is_palindrome_t3() {
         assert_eq!(
-            Solution::p234_is_palindrome(build_list_node(&vec![1, 2, 3, 2, 1])),
+            Solution::p234_is_palindrome(linkedlist![1, 2, 3, 2, 1]),
             true
         );
     }

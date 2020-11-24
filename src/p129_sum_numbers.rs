@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -49,12 +49,12 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::*;
+    use leetcode_prelude::btree;
 
     #[test]
     fn p129_sum_numbers_t1() {
         assert_eq!(
-            Solution::p129_sum_numbers(build_tree_ignore_parent(&vec![1, 2, 3])),
+            Solution::p129_sum_numbers(btree![1, 2, 3]),
             25
         );
     }
@@ -62,7 +62,7 @@ mod tests {
     #[test]
     fn p129_sum_numbers_t2() {
         assert_eq!(
-            Solution::p129_sum_numbers(build_tree_ignore_parent(&vec![4, 9, 0, 5, 1])),
+            Solution::p129_sum_numbers(btree![4, 9, 0, 5, 1]),
             1026
         );
     }

@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -56,13 +56,13 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::{build_tree_ignore_parent, NULL};
+    use leetcode_prelude::btree;
 
     #[test]
     fn p938_range_sum_bst_t1() {
         assert_eq!(
             Solution::p938_range_sum_bst(
-                build_tree_ignore_parent(&vec![10, 5, 15, 3, 7, NULL, 18]),
+                btree![10, 5, 15, 3, 7, null, 18],
                 7,
                 15
             ),

@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -44,12 +44,12 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::build_tree;
+    use leetcode_prelude::btree;
 
     #[test]
     fn p222_count_nodes_t1() {
         assert_eq!(
-            Solution::p222_count_nodes(build_tree(&vec![1, 2, 3, 4, 5, 6])),
+            Solution::p222_count_nodes(btree![1, 2, 3, 4, 5, 6]),
             6
         );
     }

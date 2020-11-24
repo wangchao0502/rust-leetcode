@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 // use mods
-use crate::utils::tree_node::TreeNode;
+use leetcode_prelude::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -11,7 +11,7 @@ pub struct Solution {}
 // Given the root node of a binary search tree (BST) and a value.
 // You need to find the node in the BST that the node's value equals the given value.
 // Return the subtree rooted with that node.
-// If such node doesn't exist, you should return NULL.
+// If such node doesn't exist, you should return null.
 
 // answers
 impl Solution {
@@ -41,13 +41,13 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::utils::tree_node::build_tree_ignore_parent;
+    use leetcode_prelude::btree;
 
     #[test]
     fn p700_search_bst_t1() {
         assert_eq!(
-            Solution::p700_search_bst(build_tree_ignore_parent(&vec![4, 2, 7, 1, 3]), 2),
-            build_tree_ignore_parent(&vec![2, 1, 3])
+            Solution::p700_search_bst(btree![4, 2, 7, 1, 3], 2),
+            btree![2, 1, 3]
         );
     }
 }
