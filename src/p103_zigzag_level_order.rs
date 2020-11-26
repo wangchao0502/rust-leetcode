@@ -8,18 +8,21 @@ use std::rc::Rc;
 pub struct Solution {}
 
 // problem description
-// Given a binary tree, return the level order traversal of its nodes' values.
-// (ie, from left to right, level by level).
+// Given a binary tree, return the zigzag level order traversal of its nodes' values.
+// (ie, from left to right, then right to left for the next level and alternate between).
+// For example:
+// Given binary tree [3,9,20,null,null,15,7],
 
 // answers
 impl Solution {
-    pub fn p102_level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
+    pub fn p103_zigzag_level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
         // codes
         let mut deque = match root {
             Some(r) => vec![r],
             None => vec![],
         };
         let mut ans = vec![];
+        let mut is_rev = false;
 
         while !deque.is_empty() {
             let (mut level_ans, mut next_deque) = (vec![], vec![]);
@@ -33,7 +36,11 @@ impl Solution {
                     next_deque.push(right);
                 }
             }
+            if is_rev {
+                level_ans.reverse();
+            }
 
+            is_rev = !is_rev;
             deque = next_deque;
             ans.push(level_ans);
         }
@@ -48,10 +55,10 @@ mod tests {
     use leetcode_prelude::btree;
 
     #[test]
-    fn p102_level_order_t1() {
+    fn p103_zigzag_level_order_t1() {
         assert_eq!(
-            Solution::p102_level_order(btree![3, 9, 20, null, null, 15, 7]),
-            vec![vec![3], vec![9, 20], vec![15, 7]]
+            Solution::p103_zigzag_level_order(btree![3, 9, 20, null, null, 15, 7]),
+            vec![vec![3], vec![20, 9], vec![15, 7]]
         );
     }
 }
