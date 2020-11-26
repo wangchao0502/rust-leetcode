@@ -78,6 +78,7 @@ mod p941_valid_mountain_array;
 mod p94_inorder_traversal;
 mod p973_k_closest;
 mod p977_sorted_squares;
+mod p98_is_valid_bst;
 
 fn main() {
     println!("Hello, world!");
