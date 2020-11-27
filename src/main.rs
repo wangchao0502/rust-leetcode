@@ -50,6 +50,7 @@ mod p402_remove_kdigits;
 mod p406_reconstruct_queue;
 mod p416_can_partition;
 mod p452_find_min_arrow_shots;
+mod p454_four_sum_count;
 mod p463_island_perimeter;
 mod p4_find_median_sorted_arrays;
 mod p5128_are_connected;
