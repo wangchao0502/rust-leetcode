@@ -10,6 +10,7 @@ mod p108_sorted_array_to_bst;
 mod p1122_relative_sort_array;
 mod p1207_unique_occurrences;
 mod p122_max_profit;
+mod p124_max_path_sum;
 mod p127_ladder_length;
 mod p129_sum_numbers;
 mod p134_can_complete_circuit;
