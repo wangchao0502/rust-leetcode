@@ -54,6 +54,7 @@ mod p416_can_partition;
 mod p452_find_min_arrow_shots;
 mod p454_four_sum_count;
 mod p463_island_perimeter;
+mod p493_reverse_pairs;
 mod p4_find_median_sorted_arrays;
 mod p5128_are_connected;
 mod p514_find_rotate_steps;
