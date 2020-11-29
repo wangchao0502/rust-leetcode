@@ -82,6 +82,7 @@ mod p938_range_sum_bst;
 mod p941_valid_mountain_array;
 mod p94_inorder_traversal;
 mod p973_k_closest;
+mod p976_largest_perimeter;
 mod p977_sorted_squares;
 mod p98_is_valid_bst;
 
