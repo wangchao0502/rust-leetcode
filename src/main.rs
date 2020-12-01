@@ -46,6 +46,7 @@ mod p327_count_range_sum;
 mod p328_odd_even_list;
 mod p344_reverse_string;
 mod p349_intersection;
+mod p34_search_range;
 mod p381_randomized_collection;
 mod p3_length_of_longest_substring;
 mod p401_read_binary_watch;
