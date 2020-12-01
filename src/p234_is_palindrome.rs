@@ -40,18 +40,12 @@ mod tests {
 
     #[test]
     fn p234_is_palindrome_t1() {
-        assert_eq!(
-            Solution::p234_is_palindrome(linkedlist![1, 2, 2, 1]),
-            true
-        );
+        assert_eq!(Solution::p234_is_palindrome(linkedlist![1, 2, 2, 1]), true);
     }
 
     #[test]
     fn p234_is_palindrome_t2() {
-        assert_eq!(
-            Solution::p234_is_palindrome(linkedlist![1, 2]),
-            false
-        );
+        assert_eq!(Solution::p234_is_palindrome(linkedlist![1, 2]), false);
     }
 
     #[test]

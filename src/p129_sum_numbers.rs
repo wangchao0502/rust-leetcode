@@ -53,17 +53,11 @@ mod tests {
 
     #[test]
     fn p129_sum_numbers_t1() {
-        assert_eq!(
-            Solution::p129_sum_numbers(btree![1, 2, 3]),
-            25
-        );
+        assert_eq!(Solution::p129_sum_numbers(btree![1, 2, 3]), 25);
     }
 
     #[test]
     fn p129_sum_numbers_t2() {
-        assert_eq!(
-            Solution::p129_sum_numbers(btree![4, 9, 0, 5, 1]),
-            1026
-        );
+        assert_eq!(Solution::p129_sum_numbers(btree![4, 9, 0, 5, 1]), 1026);
     }
 }

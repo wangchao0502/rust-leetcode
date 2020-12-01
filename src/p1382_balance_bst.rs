@@ -47,9 +47,7 @@ mod tests {
     #[test]
     fn p1382_balance_bst_t1() {
         assert_eq!(
-            Solution::p1382_balance_bst(btree![
-                1, null, 2, null, 3, null, 4
-            ]),
+            Solution::p1382_balance_bst(btree![1, null, 2, null, 3, null, 4]),
             btree![3, 2, 4, 1]
         );
     }

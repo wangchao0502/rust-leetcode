@@ -59,9 +59,6 @@ mod tests {
 
     #[test]
     fn p328_odd_even_list_t3() {
-        assert_eq!(
-            Solution::p328_odd_even_list(linkedlist![2]),
-            linkedlist![2]
-        );
+        assert_eq!(Solution::p328_odd_even_list(linkedlist![2]), linkedlist![2]);
     }
 }

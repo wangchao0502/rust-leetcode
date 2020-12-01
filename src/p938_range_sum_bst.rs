@@ -61,11 +61,7 @@ mod tests {
     #[test]
     fn p938_range_sum_bst_t1() {
         assert_eq!(
-            Solution::p938_range_sum_bst(
-                btree![10, 5, 15, 3, 7, null, 18],
-                7,
-                15
-            ),
+            Solution::p938_range_sum_bst(btree![10, 5, 15, 3, 7, null, 18], 7, 15),
             32
         );
     }

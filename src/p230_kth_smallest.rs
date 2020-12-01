@@ -54,10 +54,7 @@ mod tests {
 
     #[test]
     fn p230_kth_smallest_t1() {
-        assert_eq!(
-            Solution::p230_kth_smallest(btree![3, 1, 4, null, 2], 1),
-            1
-        );
+        assert_eq!(Solution::p230_kth_smallest(btree![3, 1, 4, null, 2], 1), 1);
     }
     #[test]
     fn p230_kth_smallest_t2() {

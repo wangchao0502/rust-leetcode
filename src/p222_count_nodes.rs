@@ -48,9 +48,6 @@ mod tests {
 
     #[test]
     fn p222_count_nodes_t1() {
-        assert_eq!(
-            Solution::p222_count_nodes(btree![1, 2, 3, 4, 5, 6]),
-            6
-        );
+        assert_eq!(Solution::p222_count_nodes(btree![1, 2, 3, 4, 5, 6]), 6);
     }
 }

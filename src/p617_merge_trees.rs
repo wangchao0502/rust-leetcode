@@ -46,10 +46,7 @@ mod tests {
     #[test]
     fn p617_merge_trees_t1() {
         assert_eq!(
-            Solution::p617_merge_trees(
-                btree![1, 3, 2, 5],
-                btree![2, 1, 3, null, 4, null, 7]
-            ),
+            Solution::p617_merge_trees(btree![1, 3, 2, 5], btree![2, 1, 3, null, 4, null, 7]),
             btree![3, 4, 5, 5, 4, null, 7]
         );
     }
