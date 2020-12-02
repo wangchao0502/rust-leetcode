@@ -42,6 +42,7 @@ mod p283_move_zeroes;
 mod p297_binary_tree;
 mod p2_add_two_numbers;
 mod p31_next_permutation;
+mod p321_max_number;
 mod p327_count_range_sum;
 mod p328_odd_even_list;
 mod p344_reverse_string;
