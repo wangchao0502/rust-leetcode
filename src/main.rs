@@ -29,6 +29,7 @@ mod p164_maximum_gap;
 mod p18_four_sum;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
+mod p204_count_primes;
 mod p206_reverse_list;
 mod p222_count_nodes;
 mod p226_invert_tree;
