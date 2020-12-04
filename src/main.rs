@@ -71,6 +71,7 @@ mod p5545_best_team_score;
 mod p57_insert;
 mod p617_merge_trees;
 mod p637_average_of_levels;
+mod p659_is_possible;
 mod p700_search_bst;
 mod p75_sort_colors;
 mod p763_partition_labels;
