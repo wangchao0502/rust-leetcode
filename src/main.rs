@@ -70,6 +70,7 @@ mod p530_get_minimum_difference;
 mod p5543_max_length_between_equal_characters;
 mod p5544_find_lex_smallest_string;
 mod p5545_best_team_score;
+mod p5617_interpret;
 mod p57_insert;
 mod p617_merge_trees;
 mod p621_least_interval;
