@@ -27,6 +27,7 @@ mod p147_insertion_sort_list;
 mod p148_sort_list;
 mod p155_min_stack;
 mod p164_maximum_gap;
+mod p1672_maximum_wealth;
 mod p18_four_sum;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
