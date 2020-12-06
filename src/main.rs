@@ -70,6 +70,7 @@ mod p5544_find_lex_smallest_string;
 mod p5545_best_team_score;
 mod p57_insert;
 mod p617_merge_trees;
+mod p621_least_interval;
 mod p637_average_of_levels;
 mod p659_is_possible;
 mod p700_search_bst;
