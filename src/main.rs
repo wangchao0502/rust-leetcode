@@ -36,6 +36,7 @@ mod p19_remove_nth_from_end;
 mod p1_two_sum;
 mod p204_count_primes;
 mod p206_reverse_list;
+mod p20_is_valid;
 mod p222_count_nodes;
 mod p226_invert_tree;
 mod p230_kth_smallest;
