@@ -21,6 +21,7 @@ mod p1370_sort_string;
 mod p1382_balance_bst;
 mod p139_word_break;
 mod p140_word_break;
+mod p1431_kids_with_candies;
 mod p143_reorder_list;
 mod p144_preorder_traversal;
 mod p147_insertion_sort_list;
