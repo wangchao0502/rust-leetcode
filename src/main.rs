@@ -85,6 +85,7 @@ mod p75_sort_colors;
 mod p763_partition_labels;
 mod p767_reorganize_string;
 mod p834_sum_of_distances_in_tree;
+mod p842_split_into_fibonacci;
 mod p844_backspace_compare;
 mod p845_longest_mountain;
 mod p861_matrix_score;
