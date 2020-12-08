@@ -24,6 +24,7 @@ mod p140_word_break;
 mod p1431_kids_with_candies;
 mod p143_reorder_list;
 mod p144_preorder_traversal;
+mod p1470_shuffle;
 mod p147_insertion_sort_list;
 mod p1480_running_sum;
 mod p148_sort_list;
