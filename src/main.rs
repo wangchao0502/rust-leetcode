@@ -79,6 +79,7 @@ mod p5617_interpret;
 mod p57_insert;
 mod p617_merge_trees;
 mod p621_least_interval;
+mod p62_unique_paths;
 mod p637_average_of_levels;
 mod p659_is_possible;
 mod p700_search_bst;
