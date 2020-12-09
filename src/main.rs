@@ -31,6 +31,7 @@ mod p1486_xor_operation;
 mod p148_sort_list;
 mod p1512_num_identical_pairs;
 mod p155_min_stack;
+mod p1603_parking_system;
 mod p164_maximum_gap;
 mod p1672_maximum_wealth;
 mod p18_four_sum;
