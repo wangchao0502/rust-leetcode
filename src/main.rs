@@ -27,6 +27,7 @@ mod p144_preorder_traversal;
 mod p1470_shuffle;
 mod p147_insertion_sort_list;
 mod p1480_running_sum;
+mod p1486_xor_operation;
 mod p148_sort_list;
 mod p1512_num_identical_pairs;
 mod p155_min_stack;
