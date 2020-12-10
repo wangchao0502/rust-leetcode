@@ -67,6 +67,7 @@ mod p401_read_binary_watch;
 mod p402_remove_kdigits;
 mod p406_reconstruct_queue;
 mod p416_can_partition;
+mod p42_trap;
 mod p452_find_min_arrow_shots;
 mod p454_four_sum_count;
 mod p463_island_perimeter;
