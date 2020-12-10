@@ -42,6 +42,7 @@ mod p206_reverse_list;
 mod p20_is_valid;
 mod p222_count_nodes;
 mod p226_invert_tree;
+mod p227_calculate;
 mod p230_kth_smallest;
 mod p234_is_palindrome;
 mod p236_lowest_common_ancestor;
