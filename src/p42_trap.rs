@@ -21,8 +21,9 @@ impl Solution {
                 if stack.is_empty() {
                     break;
                 }
-                let distance = (i - stack.last().unwrap() - 1) as i32;
-                let bounded_height = height[i].min(height[*stack.last().unwrap()]) - height[top];
+                let last = *stack.last().unwrap();
+                let distance = (i - last - 1) as i32;
+                let bounded_height = height[i].min(height[last]) - height[top];
                 ans += distance * bounded_height;
             }
             stack.push(i);
