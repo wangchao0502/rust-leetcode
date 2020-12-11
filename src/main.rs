@@ -87,6 +87,7 @@ mod p617_merge_trees;
 mod p621_least_interval;
 mod p62_unique_paths;
 mod p637_average_of_levels;
+mod p649_predict_party_victory;
 mod p659_is_possible;
 mod p700_search_bst;
 mod p75_sort_colors;
