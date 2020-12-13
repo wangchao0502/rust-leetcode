@@ -43,6 +43,7 @@ mod p1_two_sum;
 mod p204_count_primes;
 mod p206_reverse_list;
 mod p20_is_valid;
+mod p217_contains_duplicate;
 mod p222_count_nodes;
 mod p226_invert_tree;
 mod p227_calculate;
