@@ -84,6 +84,7 @@ mod p514_find_rotate_steps;
 mod p51_solve_n_queens;
 mod p52_total_n_queens;
 mod p530_get_minimum_difference;
+mod p543_diameter_of_binary_tree;
 mod p5543_max_length_between_equal_characters;
 mod p5544_find_lex_smallest_string;
 mod p5545_best_team_score;
