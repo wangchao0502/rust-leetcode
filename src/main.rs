@@ -100,6 +100,7 @@ mod p637_average_of_levels;
 mod p649_predict_party_victory;
 mod p659_is_possible;
 mod p700_search_bst;
+mod p738_monotone_increasing_digits;
 mod p75_sort_colors;
 mod p763_partition_labels;
 mod p767_reorganize_string;
