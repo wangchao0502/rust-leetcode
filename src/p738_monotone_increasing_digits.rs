@@ -25,7 +25,6 @@ impl Solution {
         //     x /= 10;
         // }
 
-        // // 逆序遍历数组
         // let mut i = arr.len() - 1;
         // stack.push(arr[i]);
 
