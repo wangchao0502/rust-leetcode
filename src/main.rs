@@ -1,3 +1,4 @@
+mod offer58_reverse_left_words;
 mod p1002_common_chars;
 mod p101_is_symmetric;
 mod p1024_video_stitching;
@@ -39,6 +40,7 @@ mod p1603_parking_system;
 mod p164_maximum_gap;
 mod p1662_array_strings_are_equal;
 mod p1672_maximum_wealth;
+mod p1684_count_consistent_strings;
 mod p18_four_sum;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
