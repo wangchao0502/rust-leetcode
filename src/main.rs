@@ -43,6 +43,7 @@ mod p1662_array_strings_are_equal;
 mod p1672_maximum_wealth;
 mod p1684_count_consistent_strings;
 mod p18_four_sum;
+mod p198_rob;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
 mod p204_count_primes;
