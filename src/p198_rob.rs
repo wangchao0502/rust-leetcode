@@ -13,24 +13,37 @@ pub struct Solution {}
 impl Solution {
     pub fn p198_rob(nums: Vec<i32>) -> i32 {
         // codes
-        // dp[i][0] i房间不偷的最高金额
-        // dp[i][1] i房间偷的最高金额
         let len = nums.len();
-        let mut dp = vec![vec![0; 2]; len];
 
         if len == 0 {
             return 0;
         }
 
-        dp[0][0] = 0;
-        dp[0][1] = nums[0];
+        // dp[i][0] i房间不偷的最高金额
+        // dp[i][1] i房间偷的最高金额
+        // let mut dp = vec![vec![0; 2]; len];
+
+        // dp[0][0] = 0;
+        // dp[0][1] = nums[0];
+
+        // for i in 1..len {
+        //     dp[i][0] = dp[i - 1][0].max(dp[i - 1][1]);
+        //     dp[i][1] = dp[i - 1][0] + nums[i];
+        // }
+
+        // dp[len - 1][0].max(dp[len - 1][1])
+
+        // 空间优化
+        let mut pass = 0;
+        let mut stole = nums[0];
 
         for i in 1..len {
-            dp[i][0] = dp[i - 1][0].max(dp[i - 1][1]);
-            dp[i][1] = dp[i - 1][0] + nums[i];
+            let tmp = stole;
+            stole = pass + nums[i];
+            pass = pass.max(tmp);
         }
 
-        dp[len - 1][0].max(dp[len - 1][1])
+        stole.max(pass)
     }
 }
 
