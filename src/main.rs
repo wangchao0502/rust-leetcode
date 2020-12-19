@@ -19,6 +19,7 @@ mod p1266_min_time_to_visit_all_points;
 mod p127_ladder_length;
 mod p1295_find_numbers;
 mod p129_sum_numbers;
+mod p131_partition;
 mod p134_can_complete_circuit;
 mod p1356_sort_by_bits;
 mod p1365_smaller_numbers_than_current;
