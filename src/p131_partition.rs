@@ -14,7 +14,7 @@ impl Solution {
     // 这里可以加一个HashMap保存历史结果
     fn is_palindrome(s: &str) -> bool {
         let mut i = 0;
-        
+
         while i <= (s.len() - 1) / 2 {
             if s.as_bytes()[i] != s.as_bytes()[s.len() - i - 1] {
                 return false;
@@ -54,7 +54,7 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use leetcode_prelude::{vec_string, assert_eq_sorted};
+    use leetcode_prelude::{assert_eq_sorted, vec_string};
 
     #[test]
     fn p131_partition_t1() {

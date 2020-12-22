@@ -14,7 +14,7 @@ impl Solution {
         // codes
         use std::collections::HashMap;
         let words = s.split(' ').collect::<Vec<&str>>();
-        
+
         if pattern.len() != words.len() {
             return false;
         }

@@ -8,6 +8,7 @@ mod p1030_all_cells_dist_order;
 mod p103_zigzag_level_order;
 mod p104_max_depth;
 mod p105_build_tree;
+mod p106_build_tree;
 mod p108_sorted_array_to_bst;
 mod p1108_defang_i_paddr;
 mod p1122_relative_sort_array;

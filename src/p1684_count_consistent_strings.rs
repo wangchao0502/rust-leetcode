@@ -15,7 +15,7 @@ impl Solution {
         // codes
         let mut set = vec![0; 26];
         let mut ans = 0;
-        
+
         for byte in allowed.into_bytes() {
             set[(byte - b'a') as usize] = 1;
         }

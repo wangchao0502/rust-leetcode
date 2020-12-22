@@ -19,7 +19,7 @@ impl Solution {
         for c in s.into_bytes() {
             ans ^= c;
         }
-        
+
         for c in t.into_bytes() {
             ans ^= c;
         }

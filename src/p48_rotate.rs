@@ -17,7 +17,7 @@ impl Solution {
         let n = matrix.len();
 
         for i in 0..(n / 2) {
-            for j in 0..(n + 1 ) / 2 {
+            for j in 0..(n + 1) / 2 {
                 let temp = matrix[i][j];
                 matrix[i][j] = matrix[n - j - 1][i];
                 matrix[n - j - 1][i] = matrix[n - i - 1][n - j - 1];
