@@ -1,5 +1,6 @@
 mod offer58_reverse_left_words;
 mod p1002_common_chars;
+mod p100_is_same_tree;
 mod p101_is_symmetric;
 mod p1024_video_stitching;
 mod p102_level_order;
