@@ -72,6 +72,7 @@ mod p283_move_zeroes;
 mod p290_word_pattern;
 mod p297_binary_tree;
 mod p3_length_of_longest_substring;
+mod p300_length_of_lis;
 mod p31_next_permutation;
 mod p316_remove_duplicate_letters;
 mod p321_max_number;
