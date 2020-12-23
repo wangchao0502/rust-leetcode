@@ -81,6 +81,7 @@ mod p349_intersection;
 mod p34_search_range;
 mod p376_wiggle_max_length;
 mod p381_randomized_collection;
+mod p387_first_uniq_char;
 mod p389_find_the_difference;
 mod p3_length_of_longest_substring;
 mod p401_read_binary_watch;
