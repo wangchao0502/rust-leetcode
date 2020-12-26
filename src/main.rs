@@ -94,6 +94,7 @@ mod p416_can_partition;
 mod p42_trap;
 mod p452_find_min_arrow_shots;
 mod p454_four_sum_count;
+mod p455_find_content_children;
 mod p463_island_perimeter;
 mod p48_rotate;
 mod p493_reverse_pairs;
