@@ -118,6 +118,7 @@ mod p5629_reformat_number;
 mod p5630_maximum_unique_subarray;
 mod p5631_max_result;
 mod p57_insert;
+mod p5_longest_palindrome;
 mod p617_merge_trees;
 mod p621_least_interval;
 mod p62_unique_paths;
