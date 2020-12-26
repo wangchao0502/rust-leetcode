@@ -138,6 +138,7 @@ mod p842_split_into_fibonacci;
 mod p844_backspace_compare;
 mod p845_longest_mountain;
 mod p84_largest_rectangle_area;
+mod p85_maximal_rectangle;
 mod p860_lemonade_change;
 mod p861_matrix_score;
 mod p867_transpose;
