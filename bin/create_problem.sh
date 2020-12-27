@@ -1,3 +1,5 @@
+#!/bin/bash
+
 pname="$1"
 fpath="$pname".rs
 base=$(dirname "$0")

@@ -91,6 +91,7 @@ mod p3_length_of_longest_substring;
 mod p401_read_binary_watch;
 mod p402_remove_kdigits;
 mod p406_reconstruct_queue;
+mod p412_fizz_buzz;
 mod p416_can_partition;
 mod p42_trap;
 mod p452_find_min_arrow_shots;
