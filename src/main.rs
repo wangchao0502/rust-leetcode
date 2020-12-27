@@ -54,6 +54,7 @@ mod p198_rob;
 mod p19_remove_nth_from_end;
 mod p1_two_sum;
 mod p204_count_primes;
+mod p205_is_isomorphic;
 mod p206_reverse_list;
 mod p20_is_valid;
 mod p217_contains_duplicate;
