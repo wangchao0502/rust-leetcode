@@ -49,7 +49,6 @@ impl Solution {
                             }
                             ans = ans.max(n * (j - col_tmp) as i32);
                         }
-    
                     } else {
                         // 一行或一列
                         ans = ans.max(dp[i][j][0] * dp[i][j][1]);
