@@ -58,6 +58,7 @@ mod p205_is_isomorphic;
 mod p206_reverse_list;
 mod p20_is_valid;
 mod p217_contains_duplicate;
+mod p21_merge_two_lists;
 mod p222_count_nodes;
 mod p226_invert_tree;
 mod p227_calculate;
