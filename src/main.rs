@@ -50,6 +50,7 @@ mod p1684_count_consistent_strings;
 mod p171_title_to_number;
 mod p188_max_profit;
 mod p18_four_sum;
+mod p190_reverse_bits;
 mod p191_hamming_weight;
 mod p198_rob;
 mod p19_remove_nth_from_end;
