@@ -30,6 +30,7 @@ mod p136_single_number;
 mod p1370_sort_string;
 mod p1382_balance_bst;
 mod p139_word_break;
+mod p13_roman_to_int;
 mod p140_word_break;
 mod p1431_kids_with_candies;
 mod p143_reorder_list;
