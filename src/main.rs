@@ -83,6 +83,7 @@ mod p31_next_permutation;
 mod p321_max_number;
 mod p327_count_range_sum;
 mod p328_odd_even_list;
+mod p330_min_patches;
 mod p341_nested_iterator;
 mod p344_reverse_string;
 mod p349_intersection;
