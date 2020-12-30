@@ -24,7 +24,7 @@ pub struct Solution {}
 
 // answers
 impl Solution {
-    pub fn p7_my_atoi(s: String) -> i32 {
+    pub fn p8_my_atoi(s: String) -> i32 {
         // codes
         let mut ans: i64 = 0;
         let mut has_first = false;
@@ -69,38 +69,38 @@ mod tests {
     use super::*;
 
     #[test]
-    fn p7_my_atoi_t1() {
-        assert_eq!(Solution::p7_my_atoi("   -42".to_string()), -42);
+    fn p8_my_atoi_t1() {
+        assert_eq!(Solution::p8_my_atoi("   -42".to_string()), -42);
     }
 
     #[test]
-    fn p7_my_atoi_t2() {
-        assert_eq!(Solution::p7_my_atoi("42".to_string()), 42);
+    fn p8_my_atoi_t2() {
+        assert_eq!(Solution::p8_my_atoi("42".to_string()), 42);
     }
 
     #[test]
-    fn p7_my_atoi_t3() {
-        assert_eq!(Solution::p7_my_atoi("42 with words".to_string()), 42);
+    fn p8_my_atoi_t3() {
+        assert_eq!(Solution::p8_my_atoi("42 with words".to_string()), 42);
     }
 
     #[test]
-    fn p7_my_atoi_t4() {
-        assert_eq!(Solution::p7_my_atoi("words and 987".to_string()), 0);
+    fn p8_my_atoi_t4() {
+        assert_eq!(Solution::p8_my_atoi("words and 987".to_string()), 0);
     }
 
     #[test]
-    fn p7_my_atoi_t5() {
+    fn p8_my_atoi_t5() {
         // 数字 "-91283472332" 超过 32 位有符号整数范围, 因此返回 INT_MIN
         assert_eq!(
-            Solution::p7_my_atoi("-91283472332".to_string()),
+            Solution::p8_my_atoi("-91283472332".to_string()),
             -2147483648
         );
     }
 
     #[test]
-    fn p7_my_atoi_t6() {
+    fn p8_my_atoi_t6() {
         assert_eq!(
-            Solution::p7_my_atoi("9223372036854775808".to_string()),
+            Solution::p8_my_atoi("9223372036854775808".to_string()),
             2147483647
         );
     }
