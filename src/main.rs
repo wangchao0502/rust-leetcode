@@ -171,6 +171,7 @@ mod p973_k_closest;
 mod p976_largest_perimeter;
 mod p977_sorted_squares;
 mod p98_is_valid_bst;
+mod p9_is_palindrome;
 
 fn main() {
     println!("Hello, world!");
