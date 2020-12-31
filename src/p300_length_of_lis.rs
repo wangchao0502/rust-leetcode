@@ -10,6 +10,7 @@ pub struct Solution {}
 // 例如，[3,6,2,7] 是数组 [0,3,1,6,2,2,7] 的子序列。
 
 // answers
+// dp
 impl Solution {
     pub fn p300_length_of_lis(nums: Vec<i32>) -> i32 {
         // codes
