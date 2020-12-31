@@ -102,6 +102,7 @@ mod p406_reconstruct_queue;
 mod p412_fizz_buzz;
 mod p416_can_partition;
 mod p42_trap;
+mod p435_erase_overlap_intervals;
 mod p452_find_min_arrow_shots;
 mod p454_four_sum_count;
 mod p455_find_content_children;
