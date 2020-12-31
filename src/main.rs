@@ -159,6 +159,7 @@ mod p85_maximal_rectangle;
 mod p860_lemonade_change;
 mod p861_matrix_score;
 mod p867_transpose;
+mod p877_stone_game;
 mod p897_increasing_bst;
 mod p8_my_atoi;
 mod p922_sort_array_by_parity_ii;
