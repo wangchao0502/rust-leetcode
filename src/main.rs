@@ -133,6 +133,7 @@ mod p5637_halves_are_alike;
 mod p5638_eaten_apples;
 mod p57_insert;
 mod p5_longest_palindrome;
+mod p605_can_place_flowers;
 mod p617_merge_trees;
 mod p621_least_interval;
 mod p62_unique_paths;
