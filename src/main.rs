@@ -74,6 +74,7 @@ mod p230_kth_smallest;
 mod p234_is_palindrome;
 mod p235_lowest_common_ancestor;
 mod p236_lowest_common_ancestor;
+mod p239_max_sliding_window;
 mod p242_is_anagram;
 mod p24_swap_pairs;
 mod p26_remove_duplicates;
