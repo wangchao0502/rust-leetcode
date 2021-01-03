@@ -15,6 +15,23 @@ pub struct Solution {}
 impl Solution {
     pub fn p5642_count_pairs(deliciousness: Vec<i32>) -> i32 {
         // codes
+        // ll ans = 0;
+        // unordered_map<int, int> cnt;
+        // for (int i : deliciousness)
+        //     cnt[i]++;
+        // for (auto [i, f] : cnt) {
+        //     for (int k = 0; k <= 21; ++k) {
+        //         int mask = 1 << k;
+        //         int comp = mask - i;
+        //         if (comp < 0)
+        //             continue;
+        //         if (comp != i && cnt.count(comp))
+        //             ans += 1LL * f * cnt[comp];
+        //         if (comp == i && f >= 2)
+        //             ans += 1LL * f * (f - 1);
+        //     }
+        // }
+        // return ans / 2 % MOD;
         use std::collections::HashSet;
         let mut nums = deliciousness;
         nums.sort();
