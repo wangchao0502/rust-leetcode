@@ -48,6 +48,7 @@ mod p14_longest_common_prefix;
 mod p150_eval_rpn;
 mod p1512_num_identical_pairs;
 mod p155_min_stack;
+mod p15_three_sum;
 mod p1603_parking_system;
 mod p164_maximum_gap;
 mod p1662_array_strings_are_equal;
