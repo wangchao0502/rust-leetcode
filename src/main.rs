@@ -54,6 +54,7 @@ mod p164_maximum_gap;
 mod p1662_array_strings_are_equal;
 mod p1672_maximum_wealth;
 mod p1684_count_consistent_strings;
+mod p16_three_sum_closest;
 mod p171_title_to_number;
 mod p188_max_profit;
 mod p18_four_sum;
