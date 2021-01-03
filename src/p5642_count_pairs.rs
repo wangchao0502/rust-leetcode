@@ -32,39 +32,34 @@ impl Solution {
         //     }
         // }
         // return ans / 2 % MOD;
-        use std::collections::HashSet;
-        let mut nums = deliciousness;
-        nums.sort();
+        use std::collections::HashMap;
+        let mut cnt: HashMap<i32, i64> = HashMap::new();
+        let mut ans: i64 = 0;
 
-        let len = nums.len();
-        let mut target_set: HashSet<i64> = HashSet::new();
-        let mut ans = 0;
-        let mut tmp = 1;
-        let mut i = 1;
-
-        while i <= 32 {
-            target_set.insert(tmp);
-            tmp <<= 1;
-            i += 1;
+        for i in deliciousness {
+            let count = cnt.entry(i).or_insert(0);
+            *count += 1;
         }
 
-        for i in 0..len {
-            let mut j = i + 1;
-            while j < len {
-                let sum = (nums[i] + nums[j]) as i64;
-                let mut skip = 1;
-                if target_set.contains(&sum) {
-                    ans += 1;
-                    while j + skip < len && nums[j + skip] == nums[j] {
-                        ans += 1;
-                        skip += 1;
+        for (num, c) in &cnt {
+            for i in 0..=21 {
+                let mask = 1 << i;
+                let comp = mask - num;
+                if comp < 0 {
+                    continue;
+                }
+                if let Some(cc) = cnt.get(&comp) {
+                    if comp != *num && *cc > 0 {
+                        ans += *c * *cc;
                     }
                 }
-                j += skip;
+                if comp == *num && *c >= 2 {
+                    ans += *c * (*c - 1);
+                }
             }
         }
 
-        ans % 1000000007
+        (ans / 2 % 1000000007) as i32
     }
 }
 
