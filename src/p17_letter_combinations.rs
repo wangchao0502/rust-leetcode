@@ -69,7 +69,7 @@ mod tests {
     fn p17_letter_combinations_t2() {
         assert_eq!(
             Solution::p17_letter_combinations("".to_string()),
-            vec_string![]
+            Vec::<String>::new()
         );
     }
 }

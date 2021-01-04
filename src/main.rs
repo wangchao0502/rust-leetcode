@@ -73,6 +73,7 @@ mod p21_merge_two_lists;
 mod p222_count_nodes;
 mod p226_invert_tree;
 mod p227_calculate;
+mod p22_generate_parenthesis;
 mod p230_kth_smallest;
 mod p234_is_palindrome;
 mod p235_lowest_common_ancestor;
