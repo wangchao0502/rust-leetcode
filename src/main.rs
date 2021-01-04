@@ -116,6 +116,7 @@ mod p48_rotate;
 mod p493_reverse_pairs;
 mod p49_group_anagrams;
 mod p4_find_median_sorted_arrays;
+mod p509_fib;
 mod p5128_are_connected;
 mod p514_find_rotate_steps;
 mod p51_solve_n_queens;
