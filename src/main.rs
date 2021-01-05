@@ -162,6 +162,7 @@ mod p763_partition_labels;
 mod p767_reorganize_string;
 mod p771_num_jewels_in_stones;
 mod p7_reverse;
+mod p830_large_group_positions;
 mod p834_sum_of_distances_in_tree;
 mod p842_split_into_fibonacci;
 mod p844_backspace_compare;
