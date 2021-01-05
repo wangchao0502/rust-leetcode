@@ -82,6 +82,7 @@ mod p239_max_sliding_window;
 mod p23_merge_k_lists;
 mod p242_is_anagram;
 mod p24_swap_pairs;
+mod p25_reverse_k_group;
 mod p26_remove_duplicates;
 mod p279_num_squares;
 mod p283_move_zeroes;
